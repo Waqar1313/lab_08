@@ -1,36 +1,81 @@
+/* Styles for the container */
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-h1, h2 {
+/* Styles for headings */
+h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Styles for the add recipe section */
 .add-recipe {
   margin-bottom: 40px;
 }
 
-label, input, textarea {
+#recipe-form label {
   display: block;
+  margin-bottom: 5px;
+}
+
+#recipe-form input[type="text"],
+#recipe-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#recipe-form input[type="file"] {
   margin-bottom: 10px;
 }
 
-ul {
-  list-style-type: none;
+#recipe-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for the recipe list */
+.recipe-list {
+  margin-bottom: 40px;
+}
+
+#search-form input[type="text"],
+#search-form input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#recipes {
+  list-style: none;
   padding: 0;
 }
 
-li {
-  margin-bottom: 20px;
+#recipes li {
+  margin-bottom: 10px;
 }
 
-.recipe-actions {
-  display: flex;
-  justify-content: space-between;
+/* Styles for pagination */
+#pagination {
+  text-align: center;
 }
 
-.recipe-actions button {
-  margin-left: 10px;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
 }
+
